@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana3GaloDiazB.Ventana_2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Sistema de calificaciones " HorizontalTextAlignment="Center" FontSize="20" TextColor="White">
+            </Label>
+
+            <?Parcial uno -------------------------------------------------------------------------------?>
+            <Label Text="Parcial 1" HorizontalOptions="Start" FontSize="18">
+            </Label>
+
+            <Entry x:Name="txtSeguimiento1" Placeholder="Nota de seguimiento 1" Keyboard="Numeric">
+            </Entry>
+
+            <Entry x:Name="txtExamen1" Placeholder="Examen parcial 1" Keyboard="Numeric">
+            </Entry>
+
+            <Label Text="Total Parcial 1"></Label>
+
+            <Entry x:Name="txtParcial1" IsReadOnly="True">
+            </Entry>
+
+            <?Parcial dos --------------------------------------------------------------------------------?>
+            <Label Text="Parcial 2" HorizontalOptions="Start" FontSize="18">
+            </Label>
+
+            <Entry x:Name="txtSeguimiento2" Placeholder="Nota de seguimiento 2" Keyboard="Numeric">
+            </Entry>
+
+            <Entry x:Name="txtExamen2" Placeholder="Examen parcial 2" Keyboard="Numeric">
+            </Entry>
+
+            <Label Text="Total Parcial 2 "></Label>
+            <Entry x:Name="txtParcial2" IsReadOnly="True">
+            </Entry>
+
+            <Label Text="Total Final "></Label>
+            <Entry x:Name="txtFinal" IsReadOnly="True">
+            </Entry>
+
+            <Entry x:Name="txtEstado" IsReadOnly="True">
+            </Entry>
+
+
+            <Button x:Name="btnTotal"
+                Text=" Calcular"
+                >
+
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
